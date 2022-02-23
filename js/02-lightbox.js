@@ -36,8 +36,5 @@ const handler = (event) => {
   return gallery;
 };
 
-// const galleryHandler = new SimpleLightbox('.gallery a', { captionsData:'alt', captionDelay:250});
-// galleryHandler.on('show.simplelightbox');
-
 galleryEl.insertAdjacentHTML('beforeend', lightBoxGalleryInsert)
 galleryEl.addEventListener('click', handler)
