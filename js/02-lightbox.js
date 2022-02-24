@@ -14,7 +14,7 @@ const lighthBoxMarkup = (item) => {
   </a>`;
 };
 
-const lightBoxGalleryInsert = galleryItems.map(lighthBoxMarkup).join("");
+const lightBoxGalleryIn = galleryItems.map(lighthBoxMarkup).join("");
 
 // function createGalleryItem(element) {
 //     return element
@@ -36,5 +36,5 @@ const handler = (event) => {
   return gallery;
 };
 
-galleryEl.insertAdjacentHTML('beforeend', lightBoxGalleryInsert)
+galleryEl.insertAdjacentHTML('beforeend', lightBoxGalleryIn)
 galleryEl.addEventListener('click', handler)
